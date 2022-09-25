@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #19A1AE;
+}
+/* カード本体 */
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 374px;
+    border-radius: 15px;
+    background-color: #ffff;
+    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+    overflow: hidden;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+/* カード背景 */
+/* プロフィール画像 */
+#profile{
+    position: absolute;
+    top: 87px;
+    border: 5px solid #ffff; 
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* 基本情報 */
+#info{
+    margin-top: 72px; 
+}
+name{
+    color: #2E3349;
+    font-weight: 700;
+}
+age{
+    color: #6B7082;
+    font-weight: 400;
+}
+/* 住所 */
+place{
+    margin-top: 8px;
+    color: #6B7082;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* 詳細情報 */
+hr{
+    width: 100%;
+    margin: 25px 0 0 0;
+    border-top: 1px solid #E8E9EC;
+}
+#stats{
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    text-align: center;
+}
+#stats num{
+    color: #2E3349;
+    font-weight: 700;
+    font-size: 18px;
+}
+#stats item{
+    margin-top: 5px;
+    color: #6B7082;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+#followers{
+    display: flex;
+    flex-direction: column;
+    margin-right: 46px;
+}
+#likes{
+    display: flex;
+    flex-direction: column;
+    margin-right: 54px;
+}
+#photos{
+    display: flex;
+    flex-direction: column;
+}
