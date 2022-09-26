@@ -4,86 +4,170 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #19A1AE;
+    background: #0A0C1C;
 }
-/* カード本体 */
 main{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 350px;
-    height: 374px;
-    border-radius: 15px;
-    background-color: #ffff;
-    box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
-    overflow: hidden;
-    font-size: 18px;
-    font-family: 'Kumbh Sans', sans-serif;
-}
-/* カード背景 */
-/* プロフィール画像 */
-#profile{
-    position: absolute;
-    top: 87px;
-    border: 5px solid #ffff; 
-    border-radius: 50%;
-    overflow: hidden;
-}
-/* 基本情報 */
-#info{
-    margin-top: 72px; 
-}
-name{
-    color: #2E3349;
-    font-weight: 700;
-}
-age{
-    color: #6B7082;
-    font-weight: 400;
-}
-/* 住所 */
-place{
-    margin-top: 8px;
-    color: #6B7082;
-    font-weight: 400;
-    font-size: 14px;
-}
-/* 詳細情報 */
-hr{
-    width: 100%;
-    margin: 25px 0 0 0;
-    border-top: 1px solid #E8E9EC;
-}
-#stats{
     display: flex;
     flex-direction: row;
-    margin-top: 24px;
-    text-align: center;
+    width: 69.375rem;
+    height: 27.875rem;
+    background: #1B1937;
+    box-shadow: 0rem 1.25rem 1.25rem -0.625rem rgba(23, 25, 41, 0.203087);
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
-#stats num{
-    color: #2E3349;
+/* メインテキスト */
+/* ヘッダー */
+h1{
+    width: 25.25rem;
+    margin-top: 4.4375rem;
+    margin-right: 5.9375rem;
+    margin-left: 4.4688rem;
+    color: #FFFFFF;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-family: 'Inter';
 }
-#stats item{
-    margin-top: 5px;
-    color: #6B7082;
+h1 emphasis{
+    color: #AB5CDB;
+}
+/* 説明 */
+p{
+    width: 23.375rem;
+    margin-top: 1.5625rem;
+    margin-left: 4.4688rem;
+    color: #FFFFFF;
     font-weight: 400;
-    font-size: 10px;
-    letter-spacing: 1.5px;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    opacity: 0.75;
+    font-family: 'Inter', sans-serif;
 }
-#followers{
+/* 詳細情報 */
+info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.5rem;
+    margin-left: 4.4688rem;
+    color: #FFFFFF;
+}
+info num{
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+}
+info name{
+    margin-top: 0.125rem;
+    font-weight: 400;
+    font-size: 0.75rem;
+    letter-spacing: 0.0625rem;
+    opacity: 0.6;
+    font-family: 'Lexend Deca', sans-serif;
+}
+#company{
     display: flex;
     flex-direction: column;
-    margin-right: 46px;
+    margin-right: 3.9375rem;
 }
-#likes{
+#templates{
     display: flex;
     flex-direction: column;
-    margin-right: 54px;
+    margin-right: 3.75rem;
 }
-#photos{
+#queries{
     display: flex;
     flex-direction: column;
+}
+/* イメージ画像 */
+.pic{
+    background-color: #AB5CDB;
+}
+#hero-pc{
+    display: block;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+}
+#hero-sp{
+    display: none;
+}
+
+
+/* SP版
+-------------------------------------------------------------------------------- */
+@media (max-width: 47.9375rem){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #0A0C1C;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 20.4375rem;
+        height: 48.75rem;
+    }
+    /* メインテキスト */
+    h1{
+        width: 16.5rem;
+        margin-top: 2.5rem;
+        margin-left: 1.9375rem;
+        font-size: 1.75rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+    p{
+        width: 16.5rem;
+        margin-top: 1rem;
+        margin-left: 1.9375rem;
+        font-size: 0.9375rem;
+        line-height: 1.5625rem;
+        text-align: center;
+    }
+    /* 詳細情報 */
+    info{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2.5rem;
+        margin-left: 0rem;
+        text-align: center;
+    }
+    info num{
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-family: 'Inter', sans-serif;
+    }
+    info name{
+        margin-top: 0.125rem;
+        font-weight: 400;
+        font-size: 0.75rem;
+        letter-spacing: 0.0625rem;
+        opacity: 0.6;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+    #company{
+        margin-right: 0rem;
+    }
+    #templates{
+        margin-right: 0rem;
+    }
+    /* メイン画像 */
+    .pic{
+        background-color: #AB5CDB;
+    }
+    #hero-pc{
+        display: none;
+        opacity: 0.7;
+    }
+    #hero-sp{
+        display: block;
+        width: 20.4375rem;
+        height: 15rem;
+        mix-blend-mode: multiply;
+        opacity: 0.7;
+    }
 }
