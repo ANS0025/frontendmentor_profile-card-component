@@ -6,6 +6,7 @@ body{
     height: 100vh;
     background-color: #19A1AE;
 }
+
 /* カード本体 */
 main{
     position: relative;
@@ -23,6 +24,10 @@ main{
 }
 /* カード背景 */
 /* プロフィール画像 */
+#pic-box{
+    width: 106px;
+    height: auto;
+}
 #profile{
     position: absolute;
     top: 87px;
