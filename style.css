@@ -24,10 +24,6 @@ main{
 }
 /* カード背景 */
 /* プロフィール画像 */
-#pic-box{
-    width: 106px;
-    height: auto;
-}
 #profile{
     position: absolute;
     top: 87px;
