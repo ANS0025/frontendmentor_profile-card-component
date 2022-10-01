@@ -1,4 +1,8 @@
 body{
+    background-color: hsl(185deg, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -500px left 0px, bottom -500px right 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
